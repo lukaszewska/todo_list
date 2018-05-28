@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>TO-DO APP</title>
+    <meta name="description" content="To-do app / Aplikacja to-do pomagająca uporządkować listę rzeczy do zrobienia." />
+    <meta name="keywords" content="todo, todos, to-do, todo app, todos app, to-do app, lista rzeczy do zrobienia, aplikacja todo, junior front-end developer, html, css, javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">	
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>to-do list</h1>
+        </header>
+        <main>
+            <div id="add-todo">
+                <input id="new-todo-value" type="text" spellcheck="false" placeholder="what I need to do?" onfocus="this.placeholder=''" onblur="this.placeholder='what I need to do?'" />
+                <button id="add-button" onclick="addTodo()">add</button>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="single-line">
+            </div>
+            <ul id="todos-list">
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/katarzyna-%C5%82ukaszewska-4a9046163/" target="_blank"><span class="fab fa-linkedin"></span></a>
+            <a href="https://github.com/lukaszewska" target="_blank"><span class="fab fa-github"></span></a>
+            <a href="https://codepen.io/Lukaszewska/" target="_blank"><span class="fab fa-codepen"></span></a>
+        </div>
+        <p id="copyright">&copy; Katarzyna Łukaszewska 2018</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
